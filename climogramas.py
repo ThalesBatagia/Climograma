@@ -31,8 +31,8 @@ fig.add_trace(
 fig.update_layout(
     title_text="Clima de Teresópolis",
     xaxis_title="Mês",
-    yaxis_title="Precipitação (mm)",
-    yaxis2=dict(title="Temperatura (°C)"),  
+    yaxis_title="Temperatura (°C)",
+    yaxis2=dict(title="Precipitação (mm)"),  
     legend_title="Dados",
     xaxis=dict(tickmode="array", tickvals=list(range(len(df_monthly["Data"]))), 
                ticktext=df_monthly["Data"], tickangle=-45) 
@@ -66,8 +66,8 @@ fig2.add_trace(
 fig2.update_layout(
     title_text="Clima de Paraty",
     xaxis_title="Mês",
-    yaxis_title="Precipitação (mm)",
-    yaxis2=dict(title="Temperatura (°C)"),  
+    yaxis_title="Temperatura (°C)",
+    yaxis2=dict(title="Precipitação (mm)"),  
     legend_title="Dados",
     xaxis=dict(tickmode="array", tickvals=list(range(len(df_monthly2["Data"]))), 
                ticktext=df_monthly2["Data"], tickangle=-45) 
